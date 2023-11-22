@@ -14,7 +14,7 @@ const Main = () => {
   const [unused, setCard] = useState(CardInfo);
 
   return (
-    <main className='m-5 ml-10 flex justify-start flex-wrap'>
+    <main className='my-5 flex justify-center items-center flex-wrap'>
       {CardInfo.map(({title, createdBy, resume, category}, key)=>(
         <CardIOP
           key={key}
@@ -22,7 +22,7 @@ const Main = () => {
           category={category}
           createdBy={createdBy} 
           resume={resume} 
-          numberIop={key}></CardIOP>
+          numberIop={key+1}></CardIOP>
       ))}
     </main>
   )
